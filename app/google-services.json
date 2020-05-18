@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "481151877821",
+    "firebase_url": "https://nowwish-898b8.firebaseio.com",
+    "project_id": "nowwish-898b8",
+    "storage_bucket": "nowwish-898b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481151877821:android:7bb9a991599a9250c9edd4",
+        "android_client_info": {
+          "package_name": "com.example.nowwish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481151877821-n3pk2c5vejaei7bsimlbcfi4hgnr9ium.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC68fx8_R179aJBbdVXEoUV9l8XGVl5uu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481151877821-n3pk2c5vejaei7bsimlbcfi4hgnr9ium.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
