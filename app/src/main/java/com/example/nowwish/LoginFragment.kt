@@ -54,12 +54,5 @@ class LoginFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        val currentUser = auth.currentUser
-
-//        if(currentUser != null)
-//            findNavController().navigate(R.id.action_loginFragment_to_wishFragment)
-
-        // проверка входа пользователя
-//        updateUI (CurrentUser)
     }
 }
