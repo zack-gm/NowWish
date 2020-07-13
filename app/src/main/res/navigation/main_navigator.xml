@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigator"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.nowwish.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/wishListFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.nowwish.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/frag_login">
+        <action
+            android:id="@+id/action_loginFragment_to_wishListFragment"
+            app:destination="@id/wishListFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/my_dialog_fragment"
+        android:name="com.example.nowwish.MyDialog"
+    />
+
+    <include app:graph="@navigation/wish_navigation" />
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="com.example.nowwish.WishListFragment"
+        android:label="WishListFragment" >
+        <action
+            android:id="@+id/action_wishListFragment_to_wish_navigator"
+            app:destination="@id/wish_navigator" />
+    </fragment>
+
+    <action android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"/>
+</navigation>

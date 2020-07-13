@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_details_wish"
+    android:name="com.example.nowwish.WishFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/fragment_details_include"
+        layout="@layout/details_wish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<!---->
+<!--    <ViewStub-->
+<!--        android:id="@+id/fragment_details_include"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+</FrameLayout>

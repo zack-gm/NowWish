@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wish_navigator"
+    app:startDestination="@id/wishFragment">
+
+    <fragment
+        android:id="@+id/wishFragment"
+        android:name="com.example.nowwish.WishsFragment"
+        tools:layout="@layout/frag_wish_list" >
+        <action
+            android:id="@+id/action_wishFragmentMain_to_wishDatailsFragment"
+            app:destination="@id/wishDatailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wishDatailsFragment"
+        android:name="com.example.nowwish.WishDatailsFragment"
+        android:label="WishDatailsFragment" />
+</navigation>
